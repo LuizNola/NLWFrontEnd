@@ -1,11 +1,12 @@
+import React from 'react';
+import { ExperienceBar } from './components/expirenceBar';
 
-
- import './styles/global.css'
+import './styles/global.css'
 function App() {
   return (
-    <>
-    <h1>Hello World! NLW</h1>
-    </>
+    <div className="container">
+      <ExperienceBar/>
+    </div>
   );
 }
 
