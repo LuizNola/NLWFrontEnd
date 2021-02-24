@@ -4,6 +4,7 @@ import styles from '../styles/pages/home.module.css';
 
 import { ExperienceBar } from '../components/expirenceBar';
 import { Profile } from '../components/Profile';
+import { CompleteChallends } from '../components/completeChallends';
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       <section>
         <div>
           <Profile/>
+          <CompleteChallends/>
         </div>
         <div>
-
+          
         </div>
       </section>
     </div>
