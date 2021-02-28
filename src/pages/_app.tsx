@@ -1,12 +1,14 @@
 import '../styles/global.css'
-
-import { ChallengensProvider } from '../contexts/challengensContexts'
 import React from 'react'
+import { ChallengensProvider } from '../contexts/challengensContexts'
+
 
 function MyApp({ Component, pageProps }) {
   return(
     <ChallengensProvider>
-     <Component {...pageProps} />
+    
+        <Component {...pageProps} />
+    
     </ChallengensProvider>
  )
 }

@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import styles from '../styles/pages/home.module.css';
 
+import { CountDownProvider } from '../contexts/countDownContexts'
+
 import { ExperienceBar } from '../components/expirenceBar';
 import { Profile } from '../components/Profile';
 import { CompleteChallends } from '../components/completeChallends';
@@ -22,6 +24,7 @@ export default function Home() {
 
       <ExperienceBar/>
 
+      <CountDownProvider>
       <section>
         <div>
           <Profile/>
@@ -32,6 +35,7 @@ export default function Home() {
           <ChallendBox/>
         </div>
       </section>
+      </CountDownProvider>
     </div>
   )
 }
